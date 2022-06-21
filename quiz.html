@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/quiz.css" />
+    <title>Quiz</title>
+  </head>
+  <body style="padding: 50px; background-color: rgba(219, 129, 129, 0.274)">
+    <h1 class="heading" style="text-align: center">
+      GOLDTECH COMPUTER INSTITUTE
+    </h1>
+    <h4>
+      <marquee behavior="alternate" direction="right">
+        My Javascript Project <i>(Quiz System)</i></marquee
+      >
+    </h4>
+    <br />
+    <div>
+      <form action="" name="quiz">
+        <label for=""><p>1. What is the Capital of Nigeria?</p></label>
+        <input type="radio" name="q1" id="" value="1a" />Abuja <br />
+        <input type="radio" name="q1" id="" value="1b" />Lagos <br />
+        <input type="radio" name="q1" id="" value="1c" />Edo <br />
+        <input type="radio" name="q1" id="" value="1d" />Kaduna <br />
+        <hr />
+
+        <label for=""><p>2. Who is the president of Nigeria?</p></label>
+        <input type="radio" name="q2" id="" value="2a" />Atiku <br />
+        <input type="radio" name="q2" id="" value="2b" />Obasanjo <br />
+        <input type="radio" name="q2" id="" value="2c" />Buhari <br />
+        <input type="radio" name="q2" id="" value="2d" />Babangida <br />
+        <hr />
+
+        <label for=""
+          ><p>3. What year did Nigeria have her independence?</p></label
+        >
+        <input type="radio" name="q3" id="" value="3a" />1996 <br />
+        <input type="radio" name="q3" id="" value="3b" />1966 <br />
+        <input type="radio" name="q3" id="" value="3c" />1986 <br />
+        <input type="radio" name="q3" id="" value="3d" />1960 <br />
+        <hr />
+
+        <label for=""><p>4. Nigeria has how many states?</p></label>
+        <input type="radio" name="q4" id="" value="4a" />35 <br />
+        <input type="radio" name="q4" id="" value="4b" />36 <br />
+        <input type="radio" name="q4" id="" value="4c" />37 <br />
+        <input type="radio" name="q4" id="" value="4d" />38 <br />
+        <hr />
+
+        <label for=""
+          ><p>5. Nigeria has how many major ethnic groups?</p></label
+        >
+        <input type="radio" name="q5" id="" value="5a" />2 <br />
+        <input type="radio" name="q5" id="" value="5b" />3 <br />
+        <input type="radio" name="q5" id="" value="5c" />4 <br />
+        <input type="radio" name="q5" id="" value="5d" />5 <br />
+        <hr />
+
+        <label for=""><p>6. What is the capital of Lagos state?</p></label>
+        <input type="radio" name="q6" id="" value="6a" />Ikeja <br />
+        <input type="radio" name="q6" id="" value="6b" />Abuja <br />
+        <input type="radio" name="q6" id="" value="6c" />Ikorodu <br />
+        <input type="radio" name="q6" id="" value="6d" />Surulere <br />
+        <hr />
+
+        <label for=""><p>7. What is the capital of Ondo state?</p></label>
+        <input type="radio" name="q7" id="" value="7a" />Owo <br />
+        <input type="radio" name="q7" id="" value="7b" />Akure <br />
+        <input type="radio" name="q7" id="" value="7c" />Oke aro <br />
+        <input type="radio" name="q7" id="" value="7d" />Benin <br />
+        <hr />
+
+        <label for=""><p>8. Who is Goodluck Jonathan?</p></label>
+        <input type="radio" name="q8" id="" value="8a" />Former president of
+        Nigeria <br />
+        <input type="radio" name="q8" id="" value="8b" />Former senate president
+        <br />
+        <input type="radio" name="q8" id="" value="8c" />Former Governor of
+        Lagos State
+        <br />
+        <input type="radio" name="q8" id="" value="8d" />Former Governor of
+        Abuja <br />
+        <hr />
+
+        <label for=""><p>9. What year did Nigeria gain its Republic</p></label>
+        <input type="radio" name="q9" id="" value="9a" />1960 <br />
+        <input type="radio" name="q9" id="" value="9b" />1961 <br />
+        <input type="radio" name="q9" id="" value="9c" />1962 <br />
+        <input type="radio" name="q9" id="" value="9d" />1963 <br />
+        <hr />
+
+        <label for=""><p>10. What ae the colors of the Nigerian Flag</p></label>
+        <input type="radio" name="q10" id="" value="10a" />Green and White
+        <br />
+        <input type="radio" name="q10" id="" value="10b" />White and White
+        <br />
+        <input type="radio" name="q10" id="" value="10c" />Green and Grey <br />
+        <input type="radio" name="q10" id="" value="10d" />Blue and Green <br />
+        <hr />
+        <br /><br />
+
+        <div class="btn">
+          <input
+            type="button"
+            id="btn"
+            value="submit"
+            onclick="answer()"
+            class="submit"
+          />
+        </div>
+      </form>
+    </div>
+
+    <style>
+      .btn {
+        text-align: center;
+      }
+      #btn {
+        padding: 20px;
+        background-color: rgb(87, 17, 17);
+        color: #fff;
+        border-radius: 20px;
+        width: 30%;
+      }
+      #btn:hover {
+        padding: 20px 70px 20px 70px;
+        background-color: rgb(21, 5, 5);
+        color: #fff;
+        border-radius: 20px;
+      }
+      hr {
+        border-color: rgb(38, 5, 5);
+      }
+    </style>
+
+    <!-- <div id="afterSubmit">
+      <p id="result"></p>
+      <p id="msg"></p>
+    </div> -->
+    <script src="/quiz.js"></script>
+  </body>
+</html>

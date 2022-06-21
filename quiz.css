@@ -1,0 +1,16 @@
+body {
+    background-color: grey
+    
+}
+.heading{
+    color: darkred;
+    text-align: center;
+}
+
+.submit{
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 1rem;
+    margin: 5px
+}
